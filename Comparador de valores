@@ -1,0 +1,129 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+
+float maior(float nt1,float nt2, float nt3)
+{
+float resmaior;
+
+
+if ((nt1>nt2)&&(nt1>nt3))
+{
+resmaior=nt1;
+}
+else if((nt2>nt1)&&(nt2>nt3))
+{
+resmaior=nt2;
+}
+else
+{
+resmaior=nt3;
+}
+
+
+ 
+
+return resmaior;
+}
+
+
+ 
+
+
+ 
+
+float menor(float nt1,float nt2, float nt3)
+{
+float resmenor;
+if ((nt1<nt2)&&(nt1<nt3))
+{
+resmenor=nt1;
+}
+else if((nt2<nt1)&&(nt2<nt3))
+{
+resmenor=nt2;
+}
+else
+{
+resmenor=nt3;
+}
+return resmenor;
+}
+
+
+ 
+
+float produto(float nt1,float nt2, float nt3)
+{
+float resproduto;
+resproduto=nt1*nt2*nt3;
+
+
+ 
+
+return resproduto;
+}
+
+
+ 
+
+int main()
+{
+float n1,n2,n3,maiorvalor,menorvalor,valorproduto;
+
+
+ 
+
+printf("Informe a primeira nota\n");
+scanf("%f",&n1);
+
+
+ 
+
+
+printf("Informe a segunda nota\n");
+scanf("%f",&n2);
+
+
+ 
+
+printf("Informe a terceira nota\n");
+scanf("%f",&n3);
+
+
+ 
+
+maiorvalor=maior(n1,n2,n3);
+
+
+ 
+
+menorvalor=menor(n1,n2,n3);
+
+
+ 
+
+valorproduto=produto(n1,n2,n3);
+
+
+ 
+
+printf("\n\n O maior valor e %.2f",maiorvalor);
+
+
+ 
+
+printf("\n\n O menor valor e %.2f",menorvalor);
+
+
+ 
+
+printf("\n\n O produto dos valores e %.2f\n\n",valorproduto);
+
+
+ 
+
+return 0;
+}
